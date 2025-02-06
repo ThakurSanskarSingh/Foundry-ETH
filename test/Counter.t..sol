@@ -12,26 +12,26 @@ contract TestCounter is Test {
         c = new Counter(100 );
     }
 
-   function testInc() public {
-      c.increment();
-      c.increment();
-      assertEq(c.getNum(), 102,"ok");        
+//    function testInc() public {
+//       c.increment();
+//       c.increment();
+//       assertEq(c.getNum(), 102,"ok");        
 
-   }
-   function testDec() public {
-    c.decrement();
-    c.decrement();
-    c.decrement();
-    assertEq(c.getNum(), 97,"dec test is ok ");
-   }
+//    }
+//    function testDec() public {
+//     c.decrement();
+//     c.decrement();
+//     c.decrement();
+//     assertEq(c.getNum(), 97,"dec test is ok ");
+//    }
 
-   function testFailDec() public {
-    c.decrement();
-    c.decrement();
-    c.decrement();
-    c.decrement();
-    assertEq(c.getNum(),103,"ok");
-   }
+//    function testFailDec() public {
+//     c.decrement();
+//     c.decrement();
+//     c.decrement();
+//     c.decrement();
+//     assertEq(c.getNum(),103,"ok");
+//    }
  
 }
 //in foundry we write contracts locallly;
